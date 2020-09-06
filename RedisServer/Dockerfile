@@ -1,10 +1,7 @@
-FROM mcr.microsoft.com/windows/nanoserver:sac2016
+FROM mcr.microsoft.com/windows/nanoserver:1903
 
 ADD ./bin/* /redis/
-RUN setx PATH '%PATH%;C:\Redis\'
-
-WORKDIR /Redis/
-
+WORKDIR /redis/
 EXPOSE 6379
 
 # Define our command to be run when launching the container
