@@ -1,4 +1,4 @@
-FROM cr.microsoft.com/mssql/server:2019-latest
+FROM mcr.microsoft.com/mssql/server:2019-latest
 ENV ACCEPT_EULA=Y
 ENV SA_PASSWORD=abcDEF123#
 ENV MSSQL_PID=Developer
